@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/easybuy?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: admin
+  jpa:
+    database: mysql
+    show-sql: true
+  groovy:
+    template:
+      charset: utf-8
+      prefix: classpath:templates/
+      suffix: .html
+      content-type: text/html
+      cache: false
